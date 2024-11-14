@@ -27,7 +27,7 @@ function FillBoard(board) {
  GetPuzzle = document.getElementById('GetPuzzle')
  SolvePuzzle = document.getElementById('SolvePuzzle')
 
-/*GetPuzzle.onclick = function () {
+GetPuzzle.onclick = function () {
 	var xhrRequest = new XMLHttpRequest()
 	xhrRequest.onload = function () {
 		var response = JSON.parse(xhrRequest.response)
@@ -38,9 +38,9 @@ function FillBoard(board) {
 	xhrRequest.open('get', 'https://sugoku.herokuapp.com/board?difficulty=easy')
 	//we can change the difficulty of the puzzle the allowed values of difficulty are easy, medium, hard and random
 	xhrRequest.send()
-}*/
+}
 
-GetPuzzle.onclick = function () {
+/*GetPuzzle.onclick = function () {
     // Toggle this variable to switch between APIs
     const useSugokuAPI = true;  
 
@@ -80,7 +80,7 @@ GetPuzzle.onclick = function () {
                 console.error("Fetch error with YouDoSudoku API:", error);
             });
     }
-};
+};*/
 
 
 SolvePuzzle.onclick = () => {
